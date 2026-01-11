@@ -65,11 +65,38 @@ form > div.campo {
     display: block;
     height: 40px;
     border-radius: 5px;
-    margin: 5px 0px;
+    margin: 8px 0px;
+    overflow: hidden;
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > span {
+    color: white;
+    background-color: black;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    display: block;
+    float: left;
+    height: 100%;
+}
+
+div.campo > input {
+    background-color: #49a09d;
+    font-size: 1em;
+    height: 100%;
+    border: none;
+    padding: 4px;
+    display: block;
+    float: left;
+    width: calc(100% - 40px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
 }
 
 form > input[type=submit] {
